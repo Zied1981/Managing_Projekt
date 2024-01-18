@@ -1,0 +1,590 @@
+@font-face {
+  font-family: Manrope_variable;
+  src: url(../fonts/Manrope_variable.ttf);
+}
+@font-face {
+  font-family: Anek_Bangla;
+  src: url(../fonts/Anek_Bangla.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.wrapper {
+  background-color: white;
+}
+
+.header {
+  margin-bottom: 4vw;
+  background: linear-gradient(
+    166deg,
+    rgba(73, 164, 248, 0.24) 10.8%,
+    rgba(15, 209, 186, 0.07) 67.77%
+  );
+}
+header a:nth-of-type(1) {
+  font-family: Anek_Bangla;
+  color: #000;
+  font-size: clamp(0.5rem, 1.9vw, 2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3vw;
+  margin-bottom: 2vw;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.nav-rechts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+.nav-links a,
+.nav-rechts a {
+  color: #000;
+  text-align: center;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.4vw, 1.4rem);
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.nav-rechts a:nth-of-type(2) {
+  background: #f57059;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 1vw 2vw;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1vw 5vw;
+}
+.content-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1vw;
+  /* margin-left: 3vw; */
+}
+.content-links h2 {
+  color: #000;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 2.1vw, 2.2rem);
+  font-weight: 400;
+  line-height: normal;
+}
+h1 {
+  color: #000;
+  font-family: Manrope_variable;
+  font-size: clamp(1rem, 5.9vw, 6rem);
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: -1.8px;
+  max-width: 25vw;
+}
+.content-links p {
+  color: #757095;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.9vw, 2rem);
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: -0.4px;
+}
+.content-links p:nth-of-type(1) {
+  max-width: 25vw;
+}
+.button {
+  color: #fff;
+  text-align: center;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.7vw, 1.8rem);
+  font-weight: 600;
+  line-height: normal;
+  background-color: #05796b;
+  box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.2);
+  border-radius: 60px;
+  padding: 0.5vw 2vw;
+  margin-bottom: 1vw;
+}
+.content-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3vw;
+}
+.content-bottom h3 {
+  color: #282828;
+  font-family: Manrop_variable;
+  font-size: clamp(1rem, 2.5vw, 2.6rem);
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: -1.3px;
+}
+.content-bottom p {
+  color: #8593a3;
+  font-family: "Anek Gujarati";
+  font-size: clamp(0.5rem, 1.5vw, 1.6rem);
+  font-weight: 100;
+  line-height: 160%;
+  letter-spacing: -0.8px;
+}
+.software-buisness h2 {
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.svg-items {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 2vw 10vw;
+}
+
+.our-services {
+  background: url(../img/Vector.svg) right no-repeat;
+  background-size: 55%;
+  background-position: top right;
+
+  margin: 1vw 3vw;
+}
+.services-top {
+  align-items: center;
+  text-align: center;
+  margin: 5vw 3vw;
+  padding-top: 2vw;
+}
+.services-top h4 {
+  color: #000;
+  text-align: center;
+  font-family: "Anek_Bangla";
+  font-size: clamp(0.5rem, 1.4vw, 1.4rem);
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+.services-top h3 {
+  color: #000;
+  text-align: center;
+  font-family: Manrope_variable;
+  font-size: clamp(1rem, 3.9vw, 4rem);
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: -1.2px;
+  max-width: 30vw;
+  margin-left: 28vw;
+  padding-left: 4vw;
+}
+.services-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vw;
+  margin: 1vw 6vw 5vw 6vw;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1vw;
+  border-radius: 1vw;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  padding: 1vw 2vw;
+}
+.container h4 {
+  color: #000;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.9vw, 2rem);
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  max-width: 5vw;
+  min-height: 2vw;
+}
+.container p {
+  color: #757095;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.2vw, 1.2rem);
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.24px;
+}
+.container svg {
+  border: 1px solid black;
+  border-radius: 0.2vw;
+  background-color: lightgray;
+  border-style: none;
+}
+
+.container:nth-of-type(8) {
+  background-color: #05796b;
+}
+.container:nth-of-type(8) h4 {
+  color: #fff;
+  font-family: Manrope_variable;
+  font-size: clamp (1rem, 3.2vw, 3.3rem);
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.66px;
+}
+.container:nth-of-type(8) p {
+  color: #fff;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.2vw, 1.2rem);
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.66px;
+}
+
+.learn-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+  text-align: center;
+}
+.learn-top h4 {
+  color: #000;
+  text-align: center;
+  font-family: Manrope_variable;
+  font-size: clamp(1rem, 3.9vw, 4rem);
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -1.2px;
+}
+.learn-top p {
+  color: #757095;
+  text-align: center;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.2vw, 1.2rem);
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: -0.4px;
+  margin-bottom: 5vw;
+}
+.learn-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  text-align: center;
+}
+.register {
+  position: relative;
+}
+.register img {
+  /*   width: 160px;
+  height: 160px; */
+  padding: 3vw;
+  margin-bottom: 2vw;
+}
+.register img:nth-of-type(1) {
+  border: 1px solid black;
+  border-style: none;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 6px 8px 80px 0px rgba(148, 148, 148, 0.16);
+}
+.dot img:nth-of-type(1) {
+  border: 1px solid #939393;
+  border-style: dashed;
+}
+.number {
+  color: #000;
+  font-family: "B612 Mono";
+  font-size: clamp(0.5rem, 1.7vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  position: absolute;
+  margin-left: 3vw;
+  border: 2px solid gray;
+  border-radius: 50%;
+  padding: 0.3vw 0.5vw;
+  border-style: none;
+  background-color: lightgray;
+}
+
+/* !hier stehen geblieben */
+
+.register h5 {
+  color: #282828;
+  font-family: Manrope;
+  font-size: clamp(0.5rem, 2.1vw, 2.4rem);
+  font-weight: 600;
+  line-height: 115%;
+  letter-spacing: -1.2p;
+  margin-bottom: 1vw;
+}
+.register p {
+  color: #757095;
+  text-align: center;
+  font-family: Manrope;
+  font-size: clamp(0.5rem, 1.5vw, 1.6rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+  margin-bottom: 8vw;
+}
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+  padding-top: 4vw;
+}
+.download p:nth-of-type(1) {
+  color: #f57059;
+  text-align: center;
+  font-family: "Anek Bangla";
+  font-size: clamp(0.5rem, 1.4vw, 1.4rem);
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.download h2 {
+  color: #000;
+  text-align: center;
+  font-family: Manrope_variable;
+  font-size: clamp(1rem, 3.9vw, 4rem);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -1.2px;
+  max-width: 25vw;
+}
+.download p:nth-of-type(2) {
+  color: #757095;
+  text-align: center;
+  font-family: Manrope;
+  font-size: clamp(0.5rem, 1.9vw, 2rem);
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: -0.4px;
+}
+.download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 7vw;
+}
+
+.rot a {
+  background-color: #f57059;
+  text-decoration: none;
+  text-align: center;
+}
+.grün {
+  box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.2);
+}
+.grün a {
+  text-decoration: none;
+  background-color: #05796b;
+  text-align: center;
+}
+.afrowomen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  margin: 2vw 2vw;
+}
+.afro-rechts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vw;
+}
+.afro-rechts h2 {
+  color: #000;
+  font-family: Manrope_variable;
+  font-size: clamp(1rem, 3.9vw, 4rem);
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: -1.2px;
+  max-width: 20vw;
+}
+.afro-rechts p {
+  color: #757095;
+  font-family: Manrope;
+  font-size: clamp(0.5rem, 1.9vw, 2rem);
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: -0.4px;
+  max-width: 20vw;
+}
+
+.afro-rechts a {
+  text-decoration: none;
+}
+.start-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+.start-top h2 {
+  color: #000;
+  text-align: center;
+  font-family: Manrope;
+  font-size: clamp(1rem, 4.5vw, 4.6rem);
+  font-weight: 800;
+  line-height: 55px;
+  letter-spacing: -1.38px;
+  max-width: 20vw;
+}
+.start-top p {
+  color: #757095;
+  text-align: center;
+  font-family: Manrope;
+  font-size: clamp(0.5rem, 1.9vw, 2rem);
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: -0.4px;
+  max-width: 20vw;
+  margin-bottom: 6vw;
+}
+.start-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  min-height: 50vh;
+}
+.basic {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1vw;
+  box-shadow: 0px 8px 80px 0px rgba(167, 167, 167, 0.24);
+  border-style: none;
+  gap: 2vw;
+  max-width: 20vw;
+  background-color: white;
+}
+.basic h6 {
+  color: #05796b;
+  font-family: Manrope;
+  font-size: clamp(0.5rem, 1.5vw, 1.6rem);
+  font-weight: 500;
+  line-height: 115%;
+  letter-spacing: 0.96px;
+  text-align: left;
+  padding-left: 1vw;
+  padding-top: 0.5vw;
+}
+.preis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  max-width: 3vw;
+}
+.preis h4 {
+  color: #282828;
+  font-family: Manrope_variable;
+  font-size: clamp(1rem, 6.3vw, 6.4rem);
+  font-weight: 700;
+  line-height: 115%;
+  margin-left: 6vw;
+  padding-left: 1vw;
+}
+.preis p:nth-of-type(1) {
+  color: #8593a3;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.5vw, 1.6rem);
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: -0.8px;
+}
+.text {
+  color: #8593a3;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.5vw, 1.6rem);
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: -0.8px;
+  margin-left: 2vw;
+  border-bottom: 1px solid gray;
+  max-width: 15vw;
+}
+.customer {
+  position: relative;
+}
+.customer p {
+  margin-left: 4.5vw;
+  color: #8593a3;
+  font-family: Manrope;
+  font-size: clamp(0.5rem, 1.5vw, 1.6rem);
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: -0.8px;
+}
+.customer svg {
+  position: absolute;
+  margin-left: 2vw;
+  left: 0.5vw;
+  top: 0.2vw;
+}
+.basic a {
+  text-decoration: none;
+  text-align: center;
+  margin-left: 2vw;
+  color: #8593a3;
+  font-family: Manrope_variable;
+  font-size: clamp(0.5rem, 1.7vw, 1.8rem);
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  border: 1px solid rgba(133, 147, 163, 0.32);
+  background-color: #fff;
+}
+.start-bottom {
+  background: url(../img/netz.svg) center no-repeat;
+  background-size: contain;
+}
+
+.premium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1vw;
+  box-shadow: 0px 8px 80px 0px rgba(167, 167, 167, 0.24);
+  border-style: none;
+  gap: 2vw;
+  max-width: 20vw;
+  border-radius: 16px;
+  background: #05796b;
+
+  box-shadow: 0px 8px 80px 0px rgba(5, 121, 107, 0.32);
+}
