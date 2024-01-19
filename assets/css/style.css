@@ -955,9 +955,12 @@ h1 {
     margin: 0 4vw;
   }
   .footer-links p {
-    font-size: 0.71rem;
+    font-size: 0.82rem;
   }
   .footer-rechts a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .company {
+    gap: 2vw;
   }
 }
