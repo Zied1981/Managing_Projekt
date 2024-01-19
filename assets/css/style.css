@@ -490,9 +490,9 @@ h1 {
   max-width: 20vw;
   background-color: white;
 }
-.basic h6 {
-  color: #05796b;
-  font-family: Manrope;
+.basic h6,
+.premium h6 {
+  font-family: Manrope_variable;
   font-size: clamp(0.5rem, 1.5vw, 1.6rem);
   font-weight: 500;
   line-height: 115%;
@@ -501,6 +501,16 @@ h1 {
   padding-left: 1vw;
   padding-top: 0.5vw;
 }
+.basic h6 {
+  color: #05796b;
+}
+.premium h6,
+.premium h4,
+.premium p,
+.customer p {
+  color: #fff;
+}
+
 .preis {
   display: flex;
   justify-content: center;
