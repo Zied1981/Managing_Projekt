@@ -6,6 +6,22 @@
   font-family: Anek_Bangla;
   src: url(../fonts/Anek_Bangla.ttf);
 }
+@font-face {
+  font-family: Acme-Regular;
+  src: url(../fonts/Acme-Regular.ttf);
+}
+@font-face {
+  font-family: B612Mono-bold;
+  src: url(../fonts/B612Mono-Bold.ttf);
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Chenla-Regular;
+  src: url(../fonts/Chenla-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +36,10 @@ html {
 .wrapper {
   background-color: white;
 }
+a {
+  color: unset;
+  text-decoration: none;
+}
 
 .header {
   margin-bottom: 4vw;
@@ -29,7 +49,7 @@ html {
     rgba(15, 209, 186, 0.07) 67.77%
   );
 }
-header a:nth-of-type(1) {
+.header nav > a {
   font-family: Anek_Bangla;
   color: #000;
   font-size: clamp(0.5rem, 1.9vw, 2rem);
@@ -126,7 +146,6 @@ h1 {
   font-weight: 600;
   line-height: normal;
   background-color: #05796b;
-  box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.2);
   border-radius: 60px;
   padding: 0.7vw 2vw;
 }
@@ -396,10 +415,14 @@ h1 {
   align-items: center;
   gap: 3vw;
 }
+/* !rot  */
 .rot {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
+  border-radius: 2vw;
+  border-style: none;
 }
 
 .rot a {
@@ -407,12 +430,16 @@ h1 {
   text-decoration: none;
   text-align: center;
 }
+/* !grün */
 
 .grün {
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.2);
+  border: 1px solid black;
+  border-radius: 2vw;
+  border-style: none;
 }
 .grün a {
   text-decoration: none;
@@ -600,6 +627,7 @@ h1 {
   letter-spacing: -0.9px;
   border: 1px solid rgba(133, 147, 163, 0.32);
   background-color: #fff;
+  margin-bottom: 2vw;
 }
 .premium {
   display: flex;
@@ -641,6 +669,7 @@ h1 {
   letter-spacing: -0.9px;
   border: 1px solid rgba(133, 147, 163, 0.32);
   background-color: #fff;
+  margin-bottom: 2vw;
 }
 /* !testimo */
 .testimo {
@@ -761,6 +790,7 @@ h1 {
   gap: 9vw;
   margin-bottom: 4vw;
 }
+
 .footer-links {
   display: flex;
   justify-content: center;
@@ -801,25 +831,48 @@ h1 {
 .footer-rechts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2vw;
+  gap: 3vw;
 }
 .company {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: flex-start;
+  align-content: start;
   gap: 0.5vw;
 }
+/* .company {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5vw;
+} */
 .company a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .copyright p {
   margin-bottom: 5vw;
-  text-align: center;
   color: #181433;
   text-align: center;
-  font-family: Chenla;
-  font-size: clamp(0.5rem, 2.3vw, 2.4rem);
+  font-family: Chenla-Regular;
+  font-size: clamp(0.5rem, 2vw, 2.4rem);
   font-weight: 400;
   line-height: 26px;
+  letter-spacing: -0.48px;
   text-transform: capitalize;
 }
+/* .company-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+.company-div a {
+  text-decoration: none;
+} */
