@@ -1001,9 +1001,37 @@ h1 {
   .content-links {
     max-width: fit-content;
   }
-  .svg-items {
+  /*   .svg-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5vw;
+  } */
+
+  .svg-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .services-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .learn-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .download {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimo-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
